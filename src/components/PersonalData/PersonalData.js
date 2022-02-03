@@ -3,6 +3,8 @@ import UserDataContext from "../../contexts/UserDataContext";
 import Button from "../Button/Button";
 
 const PersonalData = () => {
+  const { hide, hideButton } = useContext(UserDataContext);
+
   return (
     <>
       <div className="access-data">
@@ -44,7 +46,8 @@ const PersonalData = () => {
                 placeholder="Email"
               />
             </div>
-            <Button />
+
+            <Button text="Submit" submit="submit" actionOnClick={hideButton} />
           </div>
         </form>
       </div>
