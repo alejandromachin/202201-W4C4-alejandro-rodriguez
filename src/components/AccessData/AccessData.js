@@ -6,41 +6,27 @@ const AccessData = () => {
         <form>
           <div className="form-row">
             <div className="col">
-              <label htmlFor="name">First name</label>
+              <label htmlFor="username">UserName</label>
               <input
-                id="name"
+                id="username"
                 type="text"
                 className="form-control"
-                placeholder="Enter name"
+                placeholder="Enter username"
               />
             </div>
             <div className="col">
-              <label htmlFor="lastname">Last name</label>
-              <input
-                id="lastname"
-                type="text"
-                className="form-control"
-                placeholder="Enter last name"
-              />
+              <label htmlFor="password">Password</label>
+              <input id="password" type="password" className="form-control" />
             </div>
             <div className="col">
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="confirm_password">Repeat password</label>
               <input
-                type="email"
+                id="confirm_password"
+                type="password"
                 className="form-control"
-                id="email"
-                placeholder="Email"
               />
             </div>
-            <div className="col">
-              <label htmlFor="date">Date</label>
-              <input
-                type="date"
-                className="form-control"
-                id="date"
-                placeholder="Email"
-              />
-            </div>
+
             <button type="submit" className="btn btn-primary">
               Submit
             </button>

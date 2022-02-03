@@ -2,7 +2,7 @@ const PersonalData = () => {
   return (
     <>
       {" "}
-      <div className="access-data">
+      <div className="personal-data">
         <form>
           <div className="form-row">
             <div className="col">
