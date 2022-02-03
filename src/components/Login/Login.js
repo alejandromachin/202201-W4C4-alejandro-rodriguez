@@ -3,7 +3,7 @@ import UserDataContext from "../../contexts/UserDataContext";
 import Button from "../Button/Button";
 
 const Login = () => {
-  const { hide } = useContext(UserDataContext);
+  const { hide, hideButton, previousScreen } = useContext(UserDataContext);
 
   return (
     <>
@@ -27,8 +27,12 @@ const Login = () => {
                 className="form-control"
               />
             </div>
-
-            <Button />
+            <Button
+              text="Previous"
+              submit="button"
+              actionOnClick={previousScreen}
+            />
+            <Button text="Login" submit="submit" actionOnClick={hideButton} />
           </div>
         </form>
       </div>

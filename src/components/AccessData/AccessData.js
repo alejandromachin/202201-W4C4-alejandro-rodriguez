@@ -4,7 +4,7 @@ import UserDataContext from "../../contexts/UserDataContext";
 import Button from "../Button/Button";
 
 const AccessData = () => {
-  const { hide } = useContext(UserDataContext);
+  const { hideButton, previousScreen } = useContext(UserDataContext);
 
   return (
     <>
@@ -32,7 +32,12 @@ const AccessData = () => {
                 className="form-control"
               />
             </div>
-            <Button />
+            <Button
+              text="Previous"
+              submit="button"
+              actionOnClick={previousScreen}
+            />
+            <Button text="Submit" submit="submit" actionOnClick={hideButton} />
           </div>
         </form>
       </div>
