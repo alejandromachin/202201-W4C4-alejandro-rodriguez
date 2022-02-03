@@ -1,3 +1,5 @@
+import Button from "../Button/Button";
+
 const AccessData = () => {
   return (
     <>
@@ -25,10 +27,7 @@ const AccessData = () => {
                 className="form-control"
               />
             </div>
-
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
+            <Button />
           </div>
         </form>
       </div>
