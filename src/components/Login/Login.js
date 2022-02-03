@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import UserDataContext from "../../contexts/UserDataContext";
+import Button from "../Button/Button";
+
 const Login = () => {
+  const { hide } = useContext(UserDataContext);
+
   return (
     <>
       <div className="access-data">
@@ -22,9 +28,7 @@ const Login = () => {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
+            <Button />
           </div>
         </form>
       </div>
