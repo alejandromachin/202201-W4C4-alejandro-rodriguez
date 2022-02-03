@@ -1,7 +1,6 @@
 const AccessData = () => {
   return (
     <>
-      {" "}
       <div className="access-data">
         <form>
           <div className="form-row">
