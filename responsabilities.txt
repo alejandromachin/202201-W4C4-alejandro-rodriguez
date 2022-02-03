@@ -1,0 +1,30 @@
+COMPONENTES:
+
+
+-personal data
+  ·Renderizar un formulario que pida: 
+      Name
+      Last name
+      Birthdate (cuando el usuario introduzca la fecha, 
+                al lado de este campo debe aparecer su edad en años)
+      Email
+
+-access data
+  ·Renderizar un formulario que pida:
+      Username
+      Password
+      Repeat password
+
+-login:
+  ·Renderizar un formulario que pida:
+      Username (mismo que paso 2)
+      Password (mismo que paso 2)
+      Remember password (checkbox)
+
+DATOS:
+-datos de usuarios, un array con objetos con todos los datos: 
+name, last name, birthdate, email (CONTEXT) -> se puede añadir datos
+
+
+
+
