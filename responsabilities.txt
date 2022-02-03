@@ -1,5 +1,6 @@
 COMPONENTES:
 
+-app
 
 -personal data
   ·Renderizar un formulario que pida: 
@@ -21,10 +22,17 @@ COMPONENTES:
       Password (mismo que paso 2)
       Remember password (checkbox)
 
+-Pagina datos (all-last final boss no se si voy a llegar)
+
+-BOTON
+  ·Renderizar un botón
+  ·realizar una acción recibida
+
 DATOS:
 -datos de usuarios, un array con objetos con todos los datos: 
 name, last name, birthdate, email (CONTEXT) -> se puede añadir datos
 
-
+ACCIONES:
+-pasar página: definida en CONTEXT y realizada en cada boton
 
 

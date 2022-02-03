@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import UserDataContextProvider from "./contexts/UserDataContextProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserDataContextProvider>
+      <App />
+    </UserDataContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

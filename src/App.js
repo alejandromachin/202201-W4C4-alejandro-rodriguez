@@ -1,5 +1,5 @@
 function App() {
-  return <p></p>;
+  return <div className="container"></div>;
 }
 
 export default App;
