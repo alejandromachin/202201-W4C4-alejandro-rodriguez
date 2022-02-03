@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import UserDataContext from "../../contexts/UserDataContext";
+import Button from "../Button/Button";
+
 const PersonalData = () => {
   return (
     <>
-      {" "}
-      <div className="personal-data">
+      <div className="access-data">
         <form>
           <div className="form-row">
             <div className="col">
@@ -41,9 +44,7 @@ const PersonalData = () => {
                 placeholder="Email"
               />
             </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
+            <Button />
           </div>
         </form>
       </div>

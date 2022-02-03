@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import UserDataContext from "../../contexts/UserDataContext";
+
 import Button from "../Button/Button";
 
 const AccessData = () => {
+  const { hide } = useContext(UserDataContext);
+
   return (
     <>
       <div className="access-data">
