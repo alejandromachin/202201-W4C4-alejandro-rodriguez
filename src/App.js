@@ -1,4 +1,5 @@
 import AccessData from "./components/AccessData/AccessData";
+import Login from "./components/Login/Login";
 import PersonalData from "./components/PersonalData/PersonalData";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="container">
       <PersonalData />
       <AccessData />
+      <Login />
     </div>
   );
 }
