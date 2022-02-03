@@ -11,5 +11,14 @@ describe("Given a PersonalData component", () => {
 
       expect(expectedForm).toBeInTheDocument();
     });
+
+    test("Then it should render a input button with the text 'submit'", () => {
+      const expectedText = "Submit";
+      render(<PersonalData />);
+
+      const expectedForm = screen.getByRole("button", { name: expectedText });
+
+      expect(expectedForm).toBeInTheDocument();
+    });
   });
 });
